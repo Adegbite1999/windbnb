@@ -1,0 +1,26 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background: rgba(79, 79, 79, 0.4);
+}
+.modal {
+  background: #ffffff;
+  width: 100%;
+  height: 65vh;
+  z-index: 30;
+  position: fixed;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
