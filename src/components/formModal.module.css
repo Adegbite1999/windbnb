@@ -117,4 +117,9 @@ li {
     bottom: 10px;
     right: 17rem;
   }
+  .content {
+    display: flex;
+    padding: 4rem;
+    justify-content: center;
+  }
 }
