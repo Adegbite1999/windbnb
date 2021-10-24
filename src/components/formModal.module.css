@@ -113,9 +113,10 @@ li {
   }
   .buttonWrapper {
     position: absolute;
-    position: absolute;
-    bottom: 10px;
-    right: 17rem;
+
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .content {
     display: flex;
