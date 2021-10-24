@@ -19,7 +19,7 @@ function Header() {
             {showModal &&
                 <Modal show={showModal} closeModal={modalHandler}>
                     <section>
-                        <FormModal />
+                        <FormModal onClose={modalHandler} />
                     </section>
                 </Modal>}
 

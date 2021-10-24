@@ -118,6 +118,12 @@ input::placeholder {
   line-height: 1.7rem;
 }
 
+@media screen and (max-width:768px){
+  .container{
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width:575px){
   .header{
       flex-direction: column;

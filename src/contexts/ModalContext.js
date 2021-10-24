@@ -10,11 +10,11 @@ const reducer = (state, action) => {
         case 'increment_children':
             return { ...state, childrenCount: state.childrenCount + 1 };
         case 'decrement_children':
-            return { ...state, childrenCount: state.childrenCount - 1 }
+            return { ...state, childrenCount: state.childrenCount <= 0? state.childrenCount : state.childrenCount - 1  }
         case 'increment_adult':
             return { ...state, adultCount: state.adultCount + 1 }
         case 'decrement_adult':
-            return { ...state, adultCount: state.adultCount - 1 }
+            return { ...state, adultCount: state.adultCount <= 0? state.adultCount : state.adultCount - 1  }
         default:
             return state
     }

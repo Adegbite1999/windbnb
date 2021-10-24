@@ -10,7 +10,7 @@ const Location = () => {
             {
                 uniqueLocation.map((location) => {
                     return (
-                        <div className={styles.location}><ImLocation className={styles.icons} /> <li onClick={locationHandler.bind(null, location)}>{location}</li></div>
+                        <div className={styles.location}><ImLocation size={25} className={styles.icons} /> <li onClick={locationHandler.bind(null, location)}>{location}</li></div>
                     )
                 })
             }

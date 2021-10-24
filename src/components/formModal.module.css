@@ -9,7 +9,7 @@
   flex: 2 1;
 }
 
-.input:focus{
+.input:focus {
   border: 2px solid #000;
   border-radius: 16px;
 }
@@ -38,7 +38,6 @@
   border-radius: 16px;
   font-weight: 700;
   cursor: pointer;
-  
 }
 input::placeholder {
   font-size: 1.2rem;
@@ -70,42 +69,52 @@ width: 426px;
 justify-content: space-around;
 } */
 
-.content{
+.content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 45% 45% 1fr;
   padding: 4rem;
 }
 
-li{
+li {
   list-style: none;
   font-size: 1.4rem;
   line-height: 1.7rem;
   font-weight: 400;
-  margin-bottom: 1rem;
 }
-.location{
+.location {
   display: flex;
-  align-items:baseline;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+}
 
+.location:hover {
+  background-color: #ccc;
 }
-.icons{
+.icons {
   margin-right: 1rem;
+  color: #4f4f4f;
 }
-@media screen and (max-width:575px){
-  .formWrapper{
+.icons > li {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+}
+@media screen and (max-width: 575px) {
+  .formWrapper {
     width: 100%;
     padding: 2rem;
   }
-.input-box{
-flex-direction: column;
-}
-.input{
-  width: 100%;
-}
-.buttonWrapper{
-  position: absolute;
-    bottom: 0;
+  .input-box {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+  }
+  .buttonWrapper {
+    position: absolute;
+    position: absolute;
+    bottom: 10px;
     right: 17rem;
-    top: 30rem;
-}
+  }
 }

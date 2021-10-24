@@ -6,17 +6,17 @@ const AgeInput = props => {
     return (
         <section className={styles.column}>
             <div>
-                <h5>Adult</h5>
-                <span>Ages 13 or above</span>
-                <div>
-                    <button onClick={() => dispatch({ type: 'decrement_adult' })}>-</button>{count.adultCount} <button onClick={() => dispatch({ type: 'increment_adult' })}>+</button>
+                <h5 className={styles.headerTitle}>Adult</h5>
+                <span className={styles.ageSub}>Ages 13 or above</span>
+                <div className={styles.actionBox}>
+                    <button className={`${styles.btn} mr`} onClick={() => dispatch({ type: 'decrement_adult' })}>-</button> <span className={styles.count}>{count.adultCount}</span> <button className={styles.btn} onClick={() => dispatch({ type: 'increment_adult' })}>+</button>
                 </div>
             </div>
-            <div>
-                <h5>Children</h5>
-                <span>Age 2 to 13</span>
-                <div>
-                    <button onClick={() => dispatch({ type: 'decrement_children' })}>-</button>{count.childrenCount} <button onClick={() => dispatch({ type: 'increment_children' })}>+</button>
+            <div className={styles.childrenBox}>
+                <h5 className={styles.headerTitle}>Children</h5>
+                <span className={styles.ageSub}>Age 2 to 13</span>
+                <div className={styles.actionBox}>
+                    <button className={`${styles.btn} mr`} onClick={() => dispatch({ type: 'decrement_children' })}>-</button > <span className={styles.count}>{count.childrenCount}</span> <button className={styles.btn} onClick={() => dispatch({ type: 'increment_children' })}>+</button>
                 </div>
             </div>
         </section>
